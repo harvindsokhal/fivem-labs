@@ -1,7 +1,3 @@
 RegisterCommand("hello", function()
-	print("[hs_hello] Hello from client")
-
-	TriggerEvent("chat:addMessage", {
-		args = { "hs_hello", "Hello from bobin!" },
-	})
+	exports["hs_notify"]:Notify("success", "Hello from hs_hello using hs_notify!", 5000)
 end, false)
